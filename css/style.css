@@ -201,14 +201,7 @@ a{
 }
 
 
-/* menu */
 
-
-.menu{
-    background-color: var(--menu-bg);
-    height: 100%;
-    width: 300px;
-}
 
 
 
@@ -267,10 +260,7 @@ a{
 }
 
 
-
-
-
-/* header trasparente*/
+/* header trasparente */
 
 .box-musicselector .header-selector{
     height: 100px;
@@ -285,5 +275,77 @@ a{
     height: 100%;
     margin: 120px 0px;
 }
+
+
+/* MENU */
+
+.menu{
+    background-color: var(--menu-bg);
+    height: 100%;
+    width: 300px;
+    overflow: hidden;
+}
+
+
+.menu .menu-sel{
+    align-items: center;
+}
+
+
+.menu .logo img{
+    height: 40px;
+}
+
+.menu-sel .icon img{
+    width: 25px;
+    height: 25px;
+}
+
+.menu .menu-sel .description span{
+    display: block;
+    padding: 0px 5px;
+}
+
+.menu .selector ul li{
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.menu .selector ul li:hover .icon,
+.menu .selector ul li:hover .description{
+    opacity: 1;
+}
+
+/* Playlist */
+
+.playlist .new-playlist{
+    align-items: center;
+    margin-top: 10px;
+}
+
+.new-playlist .box-add {
+    background-color: var(--txt-standard);
+    opacity: 0.3;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.new-playlist .box-add span{
+    color: var(--menu-bg);
+    font-size: 2rem;
+}
+
+.new-playlist .desc{
+    padding: 0px 5px;
+}
+
+.list-item{
+    overflow: auto;
+}
+
+
+
 
 
