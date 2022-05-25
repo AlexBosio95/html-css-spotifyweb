@@ -1,7 +1,7 @@
 :root {
     --main-bg: #141922;
     --footer-bg: #282828;
-    --menu-bg: #282828;
+    --menu-bg: black;
     --txt-standard: #ffffff;
     --active: #adff2f;
     
@@ -26,7 +26,16 @@ footer{
 }
 
 
+
 /* COMMON */
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
 
 
 /* color */
@@ -47,6 +56,10 @@ footer{
     background-color: var(--menu-bg);
 }
 
+.st-color-txt{
+    color: var(--txt-standard);
+}
+
 /* font size */
 
 .fs-title-b{
@@ -62,6 +75,17 @@ footer{
 .fs-title-s{
     font-size: 1.7rem;
     font-weight: bold;
+}
+
+.fs-subtitle-s{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* container */
+
+.margin-container{
+    padding: 0px 20px;
 }
 
 
@@ -82,9 +106,10 @@ footer{
 
 .photo-clip img{
     border-radius: 100%;
-    width: 200px;
+    width: 100%;
     object-fit: cover;
-    height: 200px;
+    height: 100%;
+    background-color: var(--menu-bg);
 }
 
 
@@ -161,6 +186,12 @@ footer{
     padding-top: 90px;
 }
 
+/* filtro trasparenza */
+
+.f-opacity{
+    opacity: 0.5;
+}
+
 
 /* MAIN */
 
@@ -174,7 +205,7 @@ footer{
 
 
 .menu{
-    background-color: black;
+    background-color: var(--menu-bg);
     height: 100%;
     width: 300px;
 }
@@ -188,7 +219,53 @@ footer{
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: auto;
 }
+
+/* filtro */
+
+.filter-list{
+    justify-content: center;
+}
+
+.filter-list ul li{
+    display: inline-block;
+}
+
+.filter-list ul li a{
+    color: var(--txt-standard);
+    opacity: 0.5;
+    padding: 0px 10px;
+}
+
+/* album */
+
+.multicard{
+    width: 100%;
+}
+
+.multicard .card{
+    margin: 0px 10px;
+    width: calc(100% / 6 - 20px);
+    cursor: pointer;
+    
+}
+
+.multicard .card:hover img{
+    opacity: 0.3;
+}
+
+.multicard .card img{
+    width: 100%;
+    background-color: var(--menu-bg);
+}
+
+.multicard .card span{
+    font-size: 0.8rem;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
 
 
 
@@ -198,15 +275,15 @@ footer{
 .box-musicselector .header-selector{
     height: 100px;
     width: 100%;
-    background-color: black;
+    background-color: var(--menu-bg);
     opacity: 0.5;
-    position: absolute;
+    position: fixed;
 }
 
 .box-musicselector .main-selector{
     width: 100%;
     height: 100%;
-    background-color: red;
+    margin: 120px 0px;
 }
 
 
