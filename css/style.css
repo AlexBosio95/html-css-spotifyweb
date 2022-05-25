@@ -1,0 +1,212 @@
+:root {
+    --main-bg: #141922;
+    --footer-bg: #282828;
+    --menu-bg: #282828;
+    --txt-standard: #ffffff;
+    --active: #adff2f;
+    
+}
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer{
+    height: 110px;
+    background-color: var(--footer-bg);
+    width: 100%;
+}
+
+
+/* COMMON */
+
+
+/* color */
+
+.color-main-bg{
+    background-color: var(--main-bg);
+}
+
+.color-footer-bg{
+    background-color: var(--footer-bg);
+}
+
+.color-menu-bg{
+    background-color: var(--menu-bg);
+}
+
+.color-menu-bg{
+    background-color: var(--menu-bg);
+}
+
+/* font size */
+
+.fs-title-b{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.fs-title-m{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.fs-title-s{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+
+
+/* align */
+
+.txt-center {
+    text-align: center;
+}
+
+.line-h-st{
+    line-height: 1.7rem;
+}
+
+
+/* Photo */
+
+
+.photo-clip img{
+    border-radius: 100%;
+    width: 200px;
+    object-fit: cover;
+    height: 200px;
+}
+
+
+
+
+/* display */
+
+.d-flex {
+    display: flex;
+}
+
+.flex-w {
+    flex-wrap: wrap;
+}
+
+.d-i-block{
+    display: inline-block;
+}
+
+
+/* margin */
+
+.margin-b-small {
+    margin-bottom: 20px;
+}
+
+.margin-b-m {
+    margin-bottom: 30px;
+}
+
+.margin-b-big {
+    margin-bottom: 60px;
+}
+
+.margin-t-small {
+    margin-top: 20px;
+}
+
+.margin-t-m {
+    margin-top: 30px;
+}
+
+.margin-t-b {
+    margin-top: 60px;
+}
+
+.margin-tb-small {
+    margin: 20px 0px;
+}
+
+.margin-tb-med {
+    margin: 30px 0px;
+}
+
+.margin-small {
+    margin: 10px;
+}
+
+/* padding */
+
+.padd-top-m{
+    padding-top: 60px;
+}
+
+.padd-tb-m{
+    padding: 60px 0px;
+}
+
+.padd-tb-s{
+    padding: 40px 0px;
+}
+
+.padd-top{
+    padding-top: 90px;
+}
+
+
+/* MAIN */
+
+.container-main{
+    height: calc(100vh - 110px);
+    background-color: var(--main-bg);
+}
+
+
+/* menu */
+
+
+.menu{
+    background-color: black;
+    height: 100%;
+    width: 300px;
+}
+
+
+
+
+/* contenitore album */
+
+.box-musicselector{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+
+/* header trasparente*/
+
+.box-musicselector .header-selector{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.box-musicselector .main-selector{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+
