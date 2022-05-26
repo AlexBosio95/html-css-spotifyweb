@@ -492,11 +492,31 @@ footer .container .album .album-box{
     background-color: rgb(176, 176, 176);
 }
 
-.bar-player .progress-bar .bar-active{
+.bar-active{
     width: 30%;
     height: 5px;
     border-radius: 5px;
     background-color: var(--txt-standard);
+}
+
+
+/* Pannello dx */
+
+.control{
+    align-items: center;
+}
+
+.control a{
+    color: var(--txt-standard);
+    padding: 5px 5px;
+}
+
+.control .progress-bar-mini{
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(176, 176, 176);
+    margin: 0px 5px;
 }
 
 
