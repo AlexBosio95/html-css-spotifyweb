@@ -273,11 +273,16 @@ a {
     background-color: var(--menu-bg);
 }
 
+.multicard .card h3 {
+    margin-top: 10px;
+}
+
 .multicard .card span {
     font-size: 0.8rem;
     font-weight: bold;
     opacity: 0.5;
 }
+
 
 
 /* header trasparente */
@@ -330,14 +335,12 @@ a {
     width: 100%;
 }
 
-.box-menu-user{
+.item-b{
     align-self: flex-end;
 }
 
-.box-menu-logo,
-.box-menu-selezione,
-.box-menu-playlist,
-.box-menu-user{
+.item-h,
+.item-b{
     width: 100%;
 }
 
@@ -593,7 +596,7 @@ footer .container .album .album-box {
     }
 
     .control .progress-bar-mini {
-        width: 80px;
+        width: 60px;
     }
 
     .menu {
