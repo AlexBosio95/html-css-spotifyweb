@@ -283,15 +283,20 @@ a {
 
 .box-musicselector .header-selector {
     height: 100px;
-    width: 100%;
-    background-color: var(--menu-bg);
-    opacity: 0.7;
     position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 300px + 40px);
+    background-color: var(--menu-bg);
+    opacity: 0.8;
+    
+    
 }
 
 .box-musicselector .header-selector .margin-container {
     height: 100px;
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .box-musicselector .main-selector {
@@ -311,6 +316,7 @@ a {
     background-color: var(--menu-bg);
     height: 100%;
     width: 300px;
+    min-width: 300px;
     overflow: hidden;
 }
 
@@ -389,7 +395,7 @@ a {
 }
 
 .list-item {
-    min-height: 200px;
+    height: 200px;
     overflow: auto;
 }
 
@@ -547,3 +553,38 @@ footer .container .album .album-box {
     background-color: rgb(176, 176, 176);
     margin: 0px 5px;
 }
+
+
+
+
+/* md */
+
+@media all and (max-width: 1100px) {
+
+    .multicard .card {
+        width: calc(100% / 4 - 20px);
+        padding-top: 25px;
+    
+    }
+
+
+
+
+    
+}
+
+
+/* s */
+
+@media all and (max-width: 700px) {
+
+    
+}
+
+/* xs */
+
+@media all and (max-width: 600px) {
+
+    
+}
+
