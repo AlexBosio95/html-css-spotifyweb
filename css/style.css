@@ -19,11 +19,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-footer{
-    height: 110px;
-    background-color: var(--footer-bg);
-    width: 100%;
-}
+
 
 
 
@@ -79,6 +75,17 @@ a{
 
 .fs-subtitle-s{
     font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.fs-subtitle-xs{
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+/* font weight */
+
+.f-weight-b{
     font-weight: bold;
 }
 
@@ -391,6 +398,106 @@ a{
     padding: 0px 10px;
 }
 
+
+/* FOOTER */
+
+footer{
+    height: 110px;
+    background-color: var(--footer-bg);
+    width: 100%;
+}
+
+footer .container{
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+
+/* Pannello di sinistra */
+
+footer .container .album {
+    justify-content: space-between;
+}
+
+footer .container .album .album-box{
+    align-items: center;
+}
+
+
+.album .album-box .album-img{
+    width: 50px;
+    height: 50px;
+}
+
+.album .album-box .album-img img{
+    width: 100%;
+}
+
+.album .album-box .txt{
+    padding: 0px 10px;
+}
+
+.album .icon-box{
+    align-items: center;
+
+}
+
+.album .icon-box a{
+    color: var(--txt-standard);
+    padding: 5px 5px;
+
+}
+
+/* Pannello centrale */
+
+.player{
+    justify-content: center;
+}
+
+.player .icon-player{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.player .icon-player a{
+    color: var(--txt-standard);
+    margin: 5px 10px;
+}
+
+.player .icon-player .play{
+    border: 4px solid var(--txt-standard);
+    border-radius: 50%;
+    padding: 3px 5px;
+}
+
+.bar-player{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;
+}
+
+.bar-player span{
+    padding: 0px 10px;
+}
+
+
+.bar-player .progress-bar{
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(176, 176, 176);
+}
+
+.bar-player .progress-bar .bar-active{
+    width: 30%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--txt-standard);
+}
 
 
 
