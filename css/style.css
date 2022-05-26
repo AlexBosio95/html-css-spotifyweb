@@ -247,7 +247,8 @@ a {
 .filter-list ul li a {
     color: var(--txt-standard);
     opacity: 0.5;
-    padding: 0px 10px;
+    padding: 20px 10px;
+    display: block;
 }
 
 /* album */
@@ -347,6 +348,14 @@ a {
 
 .menu .logo img {
     height: 40px;
+}
+
+.menu .logo-mini{
+    display: none;
+}
+
+.menu .logo-mini img{
+    height: 30px;
 }
 
 .menu-sel .icon img {
@@ -476,7 +485,6 @@ footer .container .album .album-box {
 
 .album .icon-box {
     align-items: center;
-
 }
 
 .album .icon-box a {
@@ -566,10 +574,6 @@ footer .container .album .album-box {
         padding-top: 25px;
     
     }
-
-
-
-
     
 }
 
@@ -578,12 +582,99 @@ footer .container .album .album-box {
 
 @media all and (max-width: 700px) {
 
+    .multicard .card {
+        width: calc(100% / 2 - 20px);
+        padding-top: 25px;
+    }
+
+
+    .bar-player .progress-bar {
+        width: 150px;
+    }
+
+    .control .progress-bar-mini {
+        width: 80px;
+    }
+
+    .menu {
+        width: 200px;
+        min-width: 200px;
+    }
+
+    .box-musicselector .header-selector {
+        width: calc(100% - 200px + 40px);
+        
+    }
+
+    .album .icon-box {
+        flex-wrap: wrap;
+    }
+
     
 }
 
 /* xs */
 
 @media all and (max-width: 600px) {
+
+    .menu {
+        width: 50px;
+        min-width: 50px;
+    }
+
+    .box-musicselector .header-selector {
+        width: calc(100% - 50px );
+        
+    }
+
+    .box-menu-playlist{
+        display: none;
+    }
+
+    .menu .margin-container{
+        padding: 0px 5px;
+    }
+
+    .menu-sel .description {
+        display: none;
+    }
+
+    .user .username .desc{
+        display: none;
+    }
+
+    .user .install .desc{
+        display: none;
+    }
+
+    .menu .logo {
+        display: none;
+    }
+
+    .separator{
+        display: none;
+    }
+
+    .menu .logo-mini {
+        display: block;
+    }
+
+    .menu-items-d{
+        justify-content: center;
+    }
+
+    .box-menu-logo,
+    .box-menu-selezione,
+    .box-menu-user{
+        display: flex;
+        justify-content: center;
+    }
+
+    .user .install{
+        justify-content: center;
+    }
+
+
 
     
 }
