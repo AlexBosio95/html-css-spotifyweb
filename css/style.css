@@ -4,7 +4,7 @@
     --menu-bg: black;
     --txt-standard: #ffffff;
     --active: #adff2f;
-    
+
 }
 
 /* reset */
@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -25,73 +25,73 @@ body{
 
 /* COMMON */
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 
 /* color */
 
-.color-main-bg{
+.color-main-bg {
     background-color: var(--main-bg);
 }
 
-.color-footer-bg{
+.color-footer-bg {
     background-color: var(--footer-bg);
 }
 
-.color-menu-bg{
+.color-menu-bg {
     background-color: var(--menu-bg);
 }
 
-.color-menu-bg{
+.color-menu-bg {
     background-color: var(--menu-bg);
 }
 
-.st-color-txt{
+.st-color-txt {
     color: var(--txt-standard);
 }
 
 /* font size */
 
-.fs-title-b{
+.fs-title-b {
     font-size: 4rem;
     font-weight: bold;
 }
 
-.fs-title-m{
+.fs-title-m {
     font-size: 2.2rem;
     font-weight: bold;
 }
 
-.fs-title-s{
+.fs-title-s {
     font-size: 1.7rem;
     font-weight: bold;
 }
 
-.fs-subtitle-s{
+.fs-subtitle-s {
     font-size: 0.8rem;
     font-weight: bold;
 }
 
-.fs-subtitle-xs{
+.fs-subtitle-xs {
     font-size: 0.6rem;
     font-weight: bold;
 }
 
 /* font weight */
 
-.f-weight-b{
+.f-weight-b {
     font-weight: bold;
 }
 
 /* container */
 
-.margin-container{
+.margin-container {
     padding: 0px 20px;
 }
 
@@ -103,7 +103,7 @@ a{
     text-align: center;
 }
 
-.line-h-st{
+.line-h-st {
     line-height: 2.0rem;
 }
 
@@ -111,12 +111,20 @@ a{
 /* Photo */
 
 
-.photo-clip img{
+.photo-clip img {
     border-radius: 100%;
     width: 100%;
     object-fit: cover;
     height: 100%;
     background-color: var(--menu-bg);
+}
+
+/* button */
+
+.bt-border {
+    border: 2px solid var(--txt-standard);
+    border-radius: 20px;
+    padding: 10px 15px;
 }
 
 
@@ -132,7 +140,7 @@ a{
     flex-wrap: wrap;
 }
 
-.d-i-block{
+.d-i-block {
     display: inline-block;
 }
 
@@ -175,34 +183,38 @@ a{
     margin: 10px;
 }
 
+.margin-lr-s {
+    margin: 0px 5px;
+}
+
 /* padding */
 
-.padd-top-m{
+.padd-top-m {
     padding-top: 60px;
 }
 
-.padd-tb-m{
+.padd-tb-m {
     padding: 60px 0px;
 }
 
-.padd-tb-s{
+.padd-tb-s {
     padding: 40px 0px;
 }
 
-.padd-top{
+.padd-top {
     padding-top: 90px;
 }
 
 /* filtro trasparenza */
 
-.f-opacity{
+.f-opacity {
     opacity: 0.5;
 }
 
 
 /* MAIN */
 
-.container-main{
+.container-main {
     height: calc(100vh - 110px);
     background-color: var(--main-bg);
 }
@@ -215,7 +227,7 @@ a{
 
 /* contenitore album */
 
-.box-musicselector{
+.box-musicselector {
     width: 100%;
     height: 100%;
     position: relative;
@@ -224,15 +236,15 @@ a{
 
 /* filtro */
 
-.filter-list{
+.filter-list {
     justify-content: center;
 }
 
-.filter-list ul li{
+.filter-list ul li {
     display: inline-block;
 }
 
-.filter-list ul li a{
+.filter-list ul li a {
     color: var(--txt-standard);
     opacity: 0.5;
     padding: 0px 10px;
@@ -240,27 +252,27 @@ a{
 
 /* album */
 
-.multicard{
+.multicard {
     width: 100%;
 }
 
-.multicard .card{
+.multicard .card {
     margin: 0px 10px;
     width: calc(100% / 6 - 20px);
     cursor: pointer;
-    
+
 }
 
-.multicard .card:hover img{
+.multicard .card:hover img {
     opacity: 0.3;
 }
 
-.multicard .card img{
+.multicard .card img {
     width: 100%;
     background-color: var(--menu-bg);
 }
 
-.multicard .card span{
+.multicard .card span {
     font-size: 0.8rem;
     font-weight: bold;
     opacity: 0.5;
@@ -269,75 +281,91 @@ a{
 
 /* header trasparente */
 
-.box-musicselector .header-selector{
+.box-musicselector .header-selector {
     height: 100px;
     width: 100%;
     background-color: var(--menu-bg);
-    opacity: 0.5;
+    opacity: 0.7;
     position: fixed;
 }
 
-.box-musicselector .main-selector{
+.box-musicselector .header-selector .margin-container {
+    height: 100px;
+    align-items: center;
+}
+
+.box-musicselector .main-selector {
     width: 100%;
     height: 100%;
     margin: 120px 0px;
 }
 
 
+
+
 /* MENU */
 
 
 
-.menu{
+.menu {
     background-color: var(--menu-bg);
     height: 100%;
     width: 300px;
     overflow: hidden;
 }
 
-.menu .margin-container{
+.menu .margin-container {
     height: 100%;
 }
 
-.menu-items-d{
+.menu-items-d {
     height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
 }
 
+.box-menu-user{
+    align-self: flex-end;
+}
 
-.menu .menu-sel{
+.box-menu-logo,
+.box-menu-selezione,
+.box-menu-playlist,
+.box-menu-user{
+    width: 100%;
+}
+
+.menu .menu-sel {
     align-items: center;
 }
 
 
-.menu .logo img{
+.menu .logo img {
     height: 40px;
 }
 
-.menu-sel .icon img{
+.menu-sel .icon img {
     width: 25px;
     height: 25px;
 }
 
-.menu .menu-sel .description span{
+.menu .menu-sel .description span {
     display: block;
     padding: 0px 5px;
 }
 
-.menu .selector ul li{
+.menu .selector ul li {
     margin: 5px 0px;
     cursor: pointer;
 }
 
 .menu .selector ul li:hover .icon,
-.menu .selector ul li:hover .description{
+.menu .selector ul li:hover .description {
     opacity: 1;
 }
 
 /* Playlist */
 
-.playlist .new-playlist{
+.playlist .new-playlist {
     align-items: center;
     margin-top: 10px;
 }
@@ -351,36 +379,37 @@ a{
     line-height: 30px;
 }
 
-.new-playlist .box-add span{
+.new-playlist .box-add span {
     color: var(--menu-bg);
     font-size: 2rem;
 }
 
-.new-playlist .desc{
+.new-playlist .desc {
     padding: 0px 5px;
 }
 
-.list-item{
+.list-item {
+    min-height: 200px;
     overflow: auto;
 }
 
 /* user */
 
-.username{
+.username {
     align-items: center;
     padding: 10px 0px;
 }
 
-.user .install .icon img{
+.user .install .icon img {
     width: 20px;
     height: 20px;
 }
 
-.user .install .desc{
+.user .install .desc {
     padding: 0px 5px;
 }
 
-.user .username .icon{
+.user .username .icon {
     background-color: gray;
     width: 30px;
     height: 30px;
@@ -389,25 +418,25 @@ a{
     overflow: hidden;
 }
 
-.user .username .icon img{
+.user .username .icon img {
     width: 100%;
-    
+
 }
 
-.user .username .desc{
+.user .username .desc {
     padding: 0px 10px;
 }
 
 
 /* FOOTER */
 
-footer{
+footer {
     height: 110px;
     background-color: var(--footer-bg);
     width: 100%;
 }
 
-footer .container{
+footer .container {
     height: 100%;
     align-items: center;
     justify-content: space-between;
@@ -421,30 +450,30 @@ footer .container .album {
     justify-content: space-between;
 }
 
-footer .container .album .album-box{
+footer .container .album .album-box {
     align-items: center;
 }
 
 
-.album .album-box .album-img{
+.album .album-box .album-img {
     width: 50px;
     height: 50px;
 }
 
-.album .album-box .album-img img{
+.album .album-box .album-img img {
     width: 100%;
 }
 
-.album .album-box .txt{
+.album .album-box .txt {
     padding: 0px 10px;
 }
 
-.album .icon-box{
+.album .icon-box {
     align-items: center;
 
 }
 
-.album .icon-box a{
+.album .icon-box a {
     color: var(--txt-standard);
     padding: 5px 5px;
 
@@ -452,47 +481,47 @@ footer .container .album .album-box{
 
 /* Pannello centrale */
 
-.player{
+.player {
     justify-content: center;
 }
 
-.player .icon-player{
+.player .icon-player {
     width: 100%;
     align-items: center;
     justify-content: center;
 }
 
-.player .icon-player a{
+.player .icon-player a {
     color: var(--txt-standard);
     margin: 5px 10px;
 }
 
-.player .icon-player .play{
+.player .icon-player .play {
     border: 4px solid var(--txt-standard);
     border-radius: 50%;
     padding: 3px 5px;
 }
 
-.bar-player{
+.bar-player {
     width: 100%;
     align-items: center;
     justify-content: center;
     padding-top: 6px;
 }
 
-.bar-player span{
+.bar-player span {
     padding: 0px 10px;
 }
 
 
-.bar-player .progress-bar{
+.bar-player .progress-bar {
     width: 300px;
     height: 5px;
     border-radius: 5px;
     background-color: rgb(176, 176, 176);
 }
 
-.bar-active{
+.bar-active {
     width: 30%;
     height: 5px;
     border-radius: 5px;
@@ -502,23 +531,19 @@ footer .container .album .album-box{
 
 /* Pannello dx */
 
-.control{
+.control {
     align-items: center;
 }
 
-.control a{
+.control a {
     color: var(--txt-standard);
     padding: 5px 5px;
 }
 
-.control .progress-bar-mini{
+.control .progress-bar-mini {
     width: 100px;
     height: 5px;
     border-radius: 5px;
     background-color: rgb(176, 176, 176);
     margin: 0px 5px;
 }
-
-
-
-
