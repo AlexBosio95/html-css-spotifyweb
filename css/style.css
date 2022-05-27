@@ -205,6 +205,9 @@ a {
     padding-top: 90px;
 }
 
+
+
+
 /* filtro trasparenza */
 
 .f-opacity {
@@ -267,6 +270,9 @@ a {
 .filter-list ul li a:hover {
     opacity: 1;
 }
+
+
+
 
 /* album */
 
@@ -412,6 +418,20 @@ a {
 
 .menu .logo-mini img{
     height: 30px;
+}
+
+.menu-sel{
+    position: relative;
+}
+
+.selector:before {
+    width: 2px;
+    height: 25px;
+    position: absolute;
+    top: 83px;
+    left:0;
+    content: '';
+    background-color: var(--active);
 }
 
 .menu-sel .icon img {
@@ -593,6 +613,16 @@ footer .container .album .album-box {
 
 }
 
+.album .album-box .txt:hover span{
+    opacity: 1;
+    text-decoration: underline;
+
+}
+
+
+
+
+
 /* Pannello centrale */
 
 footer .container .player {
@@ -644,14 +674,6 @@ footer .container .player {
     border-radius: 5px;
     background-color: var(--txt-standard);
     position: relative;
-}
-
-.bar-active::before {
-    position: absolute;
-    contain: '';
-    width: 20px;
-    height: 20px;
-    background-color: var(--txt-standard);
 }
 
 
