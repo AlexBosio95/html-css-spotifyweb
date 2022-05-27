@@ -487,7 +487,7 @@ a {
 }
 
 .list-item {
-    height: 200px;
+    height: calc(100vh - 500px);
     min-height: 100px;
     overflow: auto;
     cursor: pointer;
